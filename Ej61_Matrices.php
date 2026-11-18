@@ -28,6 +28,40 @@ for ($i=0;$i<3;$i++) {
 		$matrizc[$i][$j] = $matriza[$i][$j]+$matrizb[$i][$j];
 	}
 }
-?>
 
-<!-- Avances, no acabado no cap -->
+echo "<h3>MatrizA</h3>";
+echo "<table border='1' cellpadding='10' cellspacing='0'>";
+for ($i = 0; $i<3;$i++) {
+	echo "<tr>";
+	for ($j = 0; $j<3; $j++) {
+		echo "<td>" . $matriza[$i][$j] . "</td>";
+	}
+	echo "</tr>";
+}
+echo "</table>";
+
+echo "<h3>MatrizB</h3>";
+echo "<table border='1' cellpadding='10' cellspacing='0'>";
+for ($i = 0; $i<3;$i++) {
+	echo "<tr>";
+	for ($j = 0; $j<3; $j++) {
+		echo "<td>" . $matrizb[$i][$j] . "</td>";
+	}
+	echo "</tr>";
+}
+echo "</table>";
+
+echo "<h3>MatrizC</h3>";
+echo "<table border='1' cellpadding='10' cellspacing='0'>";
+for ($i = 0; $i<3;$i++) {
+	echo "<tr>";
+	for ($j = 0; $j<3; $j++) {
+		echo "<td>" . $matrizc[$i][$j] . "</td>";
+	}
+	echo "</tr>";
+}
+echo "</table>";
+?>
+</form>
+</body>
+</html>
